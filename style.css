@@ -1,5 +1,5 @@
 body{
-    background-color: #141414;
+    background-color:#141414 ;
 }
 .logo {
     width: 100px;
@@ -29,6 +29,9 @@ padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
+.titolo{
+    padding-left: 5px;
+}
 
 .genres button {
     display: flex;
@@ -46,7 +49,9 @@ padding: 5px;
 .genres ion-icon {
     padding-inline: 5px;
 }
-
+.img:hover{
+transform: scale(1.1);
+}
 .layout-grid {
    
     padding-right: 20px;
@@ -57,9 +62,13 @@ padding: 5px;
    
 }
 
+
 .tv-shows-container {
     padding-inline: 30px;
     align-items: center;
+}
+.img{
+    cursor: pointer;
 }
 
 .first-grid,
@@ -95,4 +104,45 @@ padding: 5px;
         color:white;
         border-color: white
     }
+}
+.img i{
+    align-items: center;
+    color: red;
+    font-size: 40px;
+    opacity: 0;
+}
+.img i:hover{
+    opacity: 1;
+}
+.film-container{
+    overflow: hidden;
+   
+}
+
+.film-container i{
+    position:relative;
+    bottom: 50%;
+}
+.img .bi-arrow-right-circle-fill{
+    left: 65%;
+}
+
+footer i{
+    font-size: 30px;
+    padding-right: 30px;
+    color: #5A5A58;
+    cursor: pointer;
+}
+.service{
+    border: solid 1px #5A5A58;
+    padding: 5px;
+    align-items: center;
+
+}
+.social{
+    padding-left: 135px;
+}
+footer p{
+    color: #5A5A58;
+    cursor: pointer;
 }
