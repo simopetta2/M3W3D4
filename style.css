@@ -1,6 +1,9 @@
-body{
-    background-color:#141414 ;
+body {
+    width: 100%;
+    background-color: #141414;
+
 }
+
 .logo {
     width: 100px;
 }
@@ -22,44 +25,43 @@ a {
 
 .right-nav ion-icon {
     font-size: 25px;
+    cursor: pointer;
 }
 
 .under-nav {
-padding: 10px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
+
 }
-.titolo{
-    padding-left: 5px;
-}
+
 
 .genres button {
     display: flex;
     align-items: center;
-padding: 5px;
+    padding: 5px;
     background-color: black;
     border: solid 1px white;
 }
 
-.genres {
-   
-    padding-inline: 10px;
-}
 
 .genres ion-icon {
     padding-inline: 5px;
 }
-.img:hover{
-transform: scale(1.1);
+
+.img:hover {
+    transform: scale(1.1);
 }
+
 .layout-grid {
-   
+
     padding-right: 20px;
-   
+
 }
-.layout-grid i{
+
+.layout-grid i {
     font-size: 13px;
-   
+
 }
 
 
@@ -67,7 +69,8 @@ transform: scale(1.1);
     padding-inline: 30px;
     align-items: center;
 }
-.img{
+
+.img {
     cursor: pointer;
 }
 
@@ -75,74 +78,90 @@ transform: scale(1.1);
 .second-grid {
     color: rgba(255, 255, 255, 0.616);
     padding: 0 10px;
-    border: solid 1px rgba(255, 255, 255, 0.616);;
+    border: solid 1px rgba(255, 255, 255, 0.616);
+    cursor: pointer;
 }
-.first-grid:hover{
+
+.first-grid:hover {
     color: white;
     border-color: white;
     animation: click 2s infinite;
 }
-.second-grid:hover{
+
+.second-grid:hover {
     color: white;
     border-color: white;
     animation: click 2s infinite;
 }
+
+.carousel:hover {
+    color: white;
+    border-color: white;
+    animation: hover 2s infinite;
+}
+
+@keyframes hover {
+    from {
+        transform: translatex(0);
+    }
+
+    to {
+        transform: translatex(-330px);
+    }
+}
+
 @keyframes click {
-    25%{
+    25% {
         color: rgba(255, 255, 255, 0.616);
         border-color: rgba(255, 255, 255, 0.616);
     }
-    50%{
+
+    50% {
         color: white;
-         border-color: white;
+        border-color: white;
     }
-    75%{
+
+    75% {
         color: rgba(255, 255, 255, 0.616);
-        border-color:rgba(255, 255, 255, 0.616);
+        border-color: rgba(255, 255, 255, 0.616);
     }
-    100%{
-        color:white;
+
+    100% {
+        color: white;
         border-color: white
     }
 }
-.img i{
-    align-items: center;
-    color: red;
-    font-size: 40px;
-    opacity: 0;
-}
-.img i:hover{
-    opacity: 1;
-}
-.film-container{
+
+
+.film-container {
     overflow: hidden;
-   
+
 }
 
-.film-container i{
-    position:relative;
-    bottom: 50%;
-}
-.img .bi-arrow-right-circle-fill{
-    left: 65%;
-}
 
-footer i{
+footer i {
     font-size: 30px;
     padding-right: 30px;
     color: #5A5A58;
     cursor: pointer;
 }
-.service{
+
+.service {
     border: solid 1px #5A5A58;
     padding: 5px;
     align-items: center;
 
 }
-.social{
+
+.social {
     padding-left: 135px;
 }
-footer p{
+
+footer p {
     color: #5A5A58;
     cursor: pointer;
+}
+
+footer p:hover {
+    color: white;
 }
